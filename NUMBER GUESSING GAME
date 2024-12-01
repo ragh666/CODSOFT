@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int randomNumber = rand() % 100 + 1;
+cout<<" Welcome to the NUMBER GUESSING GAME "<<endl;
+int  attempts = 0;
+int guess = 0;
+while(guess != randomNumber){
+cout<<"GUESS THE NUMBER!!!";
+cin>>guess;
+if(guess < randomNumber){
+cout<<"WOOPS, The number you guessed is low than the random number. So Try again."<<endl;
+}
+else if(guess > randomNumber){
+cout<<"WOOPS, The number you guessed is high than the random number . So Try again."<<endl;
+}
+attempts++;
+}
+string result;
+if(attempts > 3){
+result = " YOU LOSE!";
+}
+else if (attempts < 3){
+result = " YOU WIN!";
+}
+cout<<" Great job you only took "<<attempts<<" attempts to guess the number!"<<result;
+return 0;
+}
