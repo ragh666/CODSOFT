@@ -3,11 +3,11 @@ using namespace std;
 int main()
 {
 int randomNumber = rand() % 100 + 1;
-cout<<" Welcome to the NUMBER GUESSING GAME "<<endl;
+cout<<"              Welcome to the NUMBER GUESSING GAME "<<endl;
 int  attempts = 0;
 int guess = 0;
 while(guess != randomNumber){
-cout<<"GUESS THE NUMBER!!!";
+cout<<"                     GUESS THE NUMBER!!!";
 cin>>guess;
 if(guess < randomNumber){
 cout<<"WOOPS, The number you guessed is low than the random number. So Try again."<<endl;
